@@ -105,6 +105,9 @@ header > nav li a {
 	color: white;
 	letter-spacing: 1px;
 }
+#active {
+	background-color: #f7d29e;
+}
 /*jumbotron*/
 .jumbotron {
 	background-color: #000000;
@@ -150,13 +153,11 @@ header > nav li a {
 	text-align: center;
 }
 /*side_text*/
-.side_text {
+#side_text {
 	position: absolute;
 	transform: rotate(-90deg);
-	left: 93vw;
-	top: 75vh;
-}
-.side_text p {
+	right: 0;
+	bottom: 20%;
 	font-size: 10px;
 	color: #FF9800; 
 	white-space: nowrap;
@@ -241,6 +242,7 @@ header > nav li a {
 
 /*subpage portfolio*/
 /*gallery*/
+
 .img-1 {background-image: url("../images/photo1.jpg"); }
 .img-2 {background-image: url("../images/photo2.jpg"); }
 .img-3 {background-image: url("../images/photo3.jpg"); }
@@ -252,8 +254,8 @@ header > nav li a {
 	height: 150px;
 	background-position: center;
 	background-size: cover;
-	margin: 20px 50px;
-	padding: 0;
+	padding: 10;
+	background-clip: content-box;
 }
 @media screen and (max-width: 767px) {
 	.gallery .row {
