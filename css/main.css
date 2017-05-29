@@ -89,10 +89,8 @@ header > nav > ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	line-height: 
 }
 header > nav ul > li {
-	display: inline-block;
 	cursor: pointer; 
 }
 header > nav li a {
@@ -167,9 +165,6 @@ header > nav li a {
 	.container {
 		max-width: 100%;
 	}
-	header > nav ul > li {
-		display: block;
-	}
 	header {
 			height: auto;
 			text-align: center;
@@ -217,6 +212,10 @@ header > nav li a {
 		left: 91vw;
 		top: 70vh;
 	}
+	header > nav ul > li {
+	display: inline-block;
+	cursor: pointer; 
+}
 }
 /*subpages*/
 .main {
@@ -243,19 +242,16 @@ header > nav li a {
 /*subpage portfolio*/
 /*gallery*/
 
-.img-1 {background-image: url("../images/photo1.jpg"); }
-.img-2 {background-image: url("../images/photo2.jpg"); }
-.img-3 {background-image: url("../images/photo3.jpg"); }
-.img-4 {background-image: url("../images/photo4.jpg"); }
-.img-5 {background-image: url("../images/photo5.jpg"); }
-.img-6 {background-image: url("../images/photo6.jpg"); }
+[class*= "col-"] {
+	overflow: hidden;
 
+}
 [class*="img-"] {
-	height: 150px;
-	background-position: center;
-	background-size: cover;
-	padding: 10;
+	height: 250px;
+	padding: 10px;
+	display: block;
 	background-clip: content-box;
+	
 }
 @media screen and (max-width: 767px) {
 	.gallery .row {
